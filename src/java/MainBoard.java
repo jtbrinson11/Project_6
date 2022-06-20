@@ -6,8 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
-public class mainBoard extends JPanel{
-    private static final int rows = 50;
+public class MainBoard extends JPanel{
+    private static final int rows = 100;
     private static final int border = 10;
     private static final Color BackGround = Color.BLUE;
     private static final Color GrassLand = Color.GREEN;
@@ -17,7 +17,7 @@ public class mainBoard extends JPanel{
     private static final Color WorkShop = Color.RED;
     private JTextField[][] gameGrid = new JTextField[rows][rows];
 
-    public mainBoard(){
+    public MainBoard(){
         JPanel mainGame = new JPanel(new GridLayout(rows, rows));
 
         mainGame.setBorder(BorderFactory.createEmptyBorder(border, border, border, border));
