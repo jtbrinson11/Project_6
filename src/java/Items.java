@@ -1,93 +1,106 @@
-public class Items {
-
-    String[] item = {"Axe", "Sword", "Crossbow", "Healing Mushroom", "Bomb", "Potion"};
+public class Items{
     private String weapon;
+    private int weaponID;
     private int weaponPower;
     private int healingAmount;
 
-    public String getWeapon(int num)
-    {
-        //re-write this as switch
-        if (num == 1)
-        {
-            return "Axe";
-        }
-        else if (num == 2)
-        {
-            return "Sword";
-        }
-        else if (num == 3)
-        {
-            return "Crossbow";
-        }
-        else if (num == 4)
-        {
-            return "Healing Mushroom";
-        }
-        else if (num == 5)
-        {
-            return "Bomb";
-        }
-        else if (num == 6)
-        {
-            return "Potion";
-        }
-        else
-        {
-            return "Empty";
-        }
-    }
-
-    public int getWeaponPower(int num)
-    {
-        //r-write this as switch
-        if (num == 1)
-        {
-            return 50;
-        }
-        else if (num == 2)
-        {
-            return 35;
-        }
-        else if (num == 3)
-        {
-            return 20;
-        }
-        else if (num == 5)
-        {
-            return 50;
-        }
-        else if (num == 6)
-        {
-            return 25;
-        }
-        else
-        {
-            return 0;
-        }
-
-    }
-
-    public int getHealingAmount(int num)
+    public void setWeapon(int num)
     {
         switch (num)
         {
-            case 4:
-                return 50;
+            case 0:
+                weapon = "Axe";
+                weaponID = 0;
                 break;
-            case 6:
-                return 25;
+            case 1:
+                weapon = "Sword";
+                weaponID = 1;
+                break;
+            case 2:
+                weapon = "Crossbow";
+                weaponID = 2;
+                break;
+            case 3:
+                weapon = "Healing Mushroom";
+                weaponID = 3;
+                break;
+            case 4:
+                weapon = "Bomb";
+                weaponID = 4;
+                break;
+            case 5:
+                weapon = "Potion";
+                weaponID = 5;
                 break;
             default:
-                return 0;
+                weapon = "Empty";
+                weaponID = 6;
                 break;
         }
     }
 
+    public String getWeapon()
+    {
+        return weapon;
+    }
+
+    public void setWeaponPower(int num)
+    {
+        switch (num)
+        {
+            case 0:
+                weaponPower = 50;
+                break;
+            case 1:
+                weaponPower = 35;
+                break;
+            case 2:
+                weaponPower = 20;
+                break;
+            case 4:
+                weaponPower = 100;
+                break;
+            case 5:
+                weaponPower = 25;
+                break;
+            default:
+                weaponPower = 0;
+                break;
+        }
+    }
+
+    public int getWeaponPower()
+    {
+        return weaponPower;
+    }
+
+    public void setHealingAmount(int num)
+    {
+        switch (num)
+        {
+            case 3:
+                healingAmount = 50;
+                break;
+            case 5:
+                healingAmount = 25;
+                break;
+            default:
+                healingAmount = 0;
+                break;
+        }
+    }
+
+    public int getHealingAmount()
+    {
+        return healingAmount;
+    }
+
+    public int getWeaponID() {return weaponID;}
+
     public Items(int num)
     {
-        weapon = getWeapon(num);
-        weaponPower = getWeaponPower(num);
-        healingAmount = getHealingAmount(num);
+        setWeapon(num);
+        setWeaponPower(num);
+        setHealingAmount(num);
     }
 }

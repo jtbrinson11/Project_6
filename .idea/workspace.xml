@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02b92773-5a1f-4ff9-b9e3-a87ebd4d996f" name="Changes" comment="added game objects">
-      <change afterPath="$PROJECT_DIR$/src/java/Items.java" afterDir="false" />
+    <list default="true" id="02b92773-5a1f-4ff9-b9e3-a87ebd4d996f" name="Changes" comment="writing game code">
+      <change afterPath="$PROJECT_DIR$/src/test/GoblinTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/HumanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/ItemsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/LandTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project_6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/Goblin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/mainBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/MainBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/Land.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/MainBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/MainBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,26 +39,70 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="mainBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mainBoard" />
+}]]></component>
+  <component name="RunManager" selected="JUnit.ItemsTest">
+    <configuration name="MainBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainBoard" />
       <module name="Project_6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoblinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_6" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GoblinTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HumanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_6" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HumanTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_6" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ItemsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_6" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LandTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.mainBoard" />
+        <item itemvalue="JUnit.ItemsTest" />
+        <item itemvalue="Application.MainBoard" />
+        <item itemvalue="JUnit.LandTest" />
+        <item itemvalue="JUnit.GoblinTest" />
+        <item itemvalue="JUnit.HumanTest" />
       </list>
     </recent_temporary>
   </component>
@@ -72,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655736394530</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="writing game code">
+      <created>1655758731741</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655758731741</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +145,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added game objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="added game objects" />
+    <MESSAGE value="writing game code" />
+    <option name="LAST_COMMIT_MESSAGE" value="writing game code" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java/MainBoard.java</url>
+          <line>1412</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
